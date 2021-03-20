@@ -17,7 +17,7 @@ class Stack:
         self.size -= 1
         return self.pointer
 
-    def insert(self, data):
+    def push(self, data):
         self.pointer = data
         self.size += 1
 
@@ -26,7 +26,7 @@ class Stack:
 
 if __name__ == "__main__":
     stack = Stack(1)
-    stack.insert(4)
+    stack.push(4)
     print(stack.pop())
     print(stack.size)
 
